@@ -1,3 +1,17 @@
+About This Fork
+============
+This Frok is created to implement a VGA controller device into patmos.
+The implementation uses a static resolution of 1152x864 at 60Hz refresh rate
+This is done to match the pixel clock with the 80MHz of the patmos processor.
+
+From the C program you should be able to enter characters that will display on the screen. Only a very limited character set is available.
+The available characters are: A, B, E, H, L and O.
+
+VGA device Known Issues
+============
+- [] Replication issues down the screen.
+- [] Offset issues from line 6.
+
 About Patmos
 ============
 
@@ -91,7 +105,7 @@ The handbook is then built with:
     make
 
 
-Known Issues
+Patmos Known Issues
 ============
 
 - [ ] `patmos-llvm` currently does not compile with clang > 3.4 on Ubuntu 15.04.
