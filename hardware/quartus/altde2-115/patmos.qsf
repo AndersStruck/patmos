@@ -113,6 +113,64 @@ set_location_assignment PIN_N21 -to iKeysPins_key[2]
 set_location_assignment PIN_M21 -to iKeysPins_key[1]
 set_location_assignment PIN_M23 -to iKeysPins_key[0]
 
+set_location_assignment PIN_D12 -to oVGA[23]
+set_location_assignment PIN_D11 -to oVGA[22]
+set_location_assignment PIN_C12 -to oVGA[21]
+set_location_assignment PIN_A11 -to oVGA[20]
+set_location_assignment PIN_B11 -to oVGA[19]
+set_location_assignment PIN_C11 -to oVGA[18]
+set_location_assignment PIN_A10 -to oVGA[17]
+set_location_assignment PIN_B10 -to oVGA[16]
+set_location_assignment PIN_C9 -to oVGA[15]
+set_location_assignment PIN_F10 -to oVGA[14]
+set_location_assignment PIN_B8 -to oVGA[13]
+set_location_assignment PIN_C8 -to oVGA[12]
+set_location_assignment PIN_H12 -to oVGA[11]
+set_location_assignment PIN_F8 -to oVGA[10]
+set_location_assignment PIN_G11 -to oVGA[9]
+set_location_assignment PIN_G8 -to oVGA[8]
+set_location_assignment PIN_H10 -to oVGA[7]
+set_location_assignment PIN_H8 -to oVGA[6]
+set_location_assignment PIN_J12 -to oVGA[5]
+set_location_assignment PIN_G10 -to oVGA[4]
+set_location_assignment PIN_F12 -to oVGA[3]
+set_location_assignment PIN_D10 -to oVGA[2]
+set_location_assignment PIN_E11 -to oVGA[1]
+set_location_assignment PIN_E12 -to oVGA[0]
+set_location_assignment PIN_F11 -to ovga_blank
+set_location_assignment PIN_C13 -to ovga_v_sync
+set_location_assignment PIN_G13 -to ovga_h_sync
+set_location_assignment PIN_C10 -to ovga_Green_sync
+set_location_assignment PIN_A12 -to ovga_clk_pix
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[23]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[22]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[21]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[20]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[19]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[18]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oVGA[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ovga_h_sync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ovga_v_sync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ovga_blank
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ovga_clk_pix
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ovga_Green_sync
 
 set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
 set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED

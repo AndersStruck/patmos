@@ -27,7 +27,14 @@ entity patmos_top is
         oSRAM_OE_N : out std_logic;
         oSRAM_WE_N : out std_logic;
         oSRAM_LB_N : out std_logic;
-        oSRAM_UB_N : out std_logic
+				oSRAM_UB_N : out std_logic;
+				
+		oVGA : out std_logic_vector(23 downto 0);
+		ovga_h_sync : out std_logic;
+		ovga_v_sync : out std_logic;
+		ovga_blank : out std_logic;
+		ovga_clk_pix : out std_logic;
+		ovga_Green_sync : out std_logic
 	);
 end entity patmos_top;
 
@@ -66,8 +73,14 @@ architecture rtl of patmos_top is
             io_sramCtrlPins_ramOut_noe : out std_logic;
             io_sramCtrlPins_ramOut_nwe : out std_logic;
             io_sramCtrlPins_ramOut_nlb : out std_logic;
-            io_sramCtrlPins_ramOut_nub : out std_logic
+            io_sramCtrlPins_ramOut_nub : out std_logic;
 
+			io_vgaPins_vga : out std_logic_vector(23 downto 0);
+			io_vgaPins_hSync : out std_logic;
+    	io_vgaPins_vSync : out std_logic;
+    	io_vgaPins_blank : out std_logic;
+    	io_vgaPins_greenSync : out std_logic;
+    	io_vgaPins_pixClk : out std_logic
 		);
 	end component;
 
@@ -139,6 +152,8 @@ begin
            oLedsPins_led,
            iKeysPins_key,
            oUartPins_txd, iUartPins_rxd,
-           oSRAM_A, sram_out_dout_ena, SRAM_DQ, sram_out_dout, oSRAM_CE_N, oSRAM_OE_N, oSRAM_WE_N, oSRAM_LB_N, oSRAM_UB_N);
-
+					 oSRAM_A, sram_out_dout_ena, SRAM_DQ, sram_out_dout, oSRAM_CE_N, oSRAM_OE_N, oSRAM_WE_N, oSRAM_LB_N, oSRAM_UB_N,
+					 io_vgaPins_vga => oVGA, io_vgaPins_hSync => ovga_h_sync ,io_vgaPins_vSync => ovga_v_sync, 
+					 io_vgaPins_blank => ovga_blank, io_vgaPins_greenSync => ovga_Green_sync, io_vgaPins_pixClk => ovga_clk_pix );
+					 
 end architecture rtl;
